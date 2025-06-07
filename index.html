@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>India Air Quality Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  🌍 India Air Quality Dashboard
+  <button id="toggleTheme">🌙 Dark Mode</button>
+</header>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="🔍 Search City..." onkeyup="filterCities()">
+</div>
+
+<div class="dashboard" id="dashboard"></div>
+
+<div id="chart-container">
+  <canvas id="aqiChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
